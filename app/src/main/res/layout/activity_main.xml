@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#e3ded1">
+
+    <ImageView
+        android:layout_width="3000dp"
+        android:layout_height="180dp"
+        android:background="@drawable/u1"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView1"
+        android:background="@drawable/san"
+        android:layout_marginTop="96dp"
+        android:layout_below="@+id/imageView"
+
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="@drawable/po"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/pom"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HEALTH"
+        android:id="@+id/textView"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/imageView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="FIRE WORKERS "
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="POLICE"
+        android:id="@+id/textView3"
+        android:layout_marginStart="125dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/imageView1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am the person concerned "
+        android:id="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageView1"
+        android:checked="true" />
+
+</RelativeLayout>
